@@ -1,4 +1,4 @@
 <?php
 
-echo "MertgkhjfgfinisGay";
+echo "MertgkhfinisGay";
 ?>
