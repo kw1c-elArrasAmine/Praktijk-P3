@@ -10,14 +10,14 @@
 </head>
 <body>
 <head>
-        <nav>
-<ul>
-    <li><a href="../index.php">Homepagina</a></li>
-    <li><a href="../formulier.php">Formulier</a></li>
+    <nav>
+        <ul>
+            <li><a href="../index.php">Homepagina</a></li>
+            <li><a href="../formulier.php">Formulier</a></li>
 
 
-</ul>
-        </nav>
+        </ul>
+    </nav>
     <head>
 </body>
 </html>
