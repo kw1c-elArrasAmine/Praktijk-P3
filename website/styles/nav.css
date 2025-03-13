@@ -1,0 +1,24 @@
+/* Achtergrond kleur navigatiebalk */
+.topnav {
+    background-color: #000;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* het algemene uiterlijk van navigatiebalk */
+.topnav a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* hover kleur verandering */
+.topnav a:hover {
+    background-color: #232323;
+    color: black;
+}
