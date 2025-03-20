@@ -26,4 +26,13 @@
 
 .logo{
     height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+}
+
+.krupp{
+    background-color: #3c3c3c;
 }
