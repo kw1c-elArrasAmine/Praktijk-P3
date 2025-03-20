@@ -7,12 +7,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/formulier.css">
     <title>FORMULIER</title>
 </head>
 <body>
+<header>
 <?php
 include "include/navformulier.php";
 ?>
+</header>
 
+    <main>
+
+    </main>
+
+        <footer>
+
+        </footer>
 </body>
 </html>
