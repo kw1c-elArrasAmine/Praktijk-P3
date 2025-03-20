@@ -1,6 +1,6 @@
 /* Achtergrond kleur navigatiebalk */
 .topnav {
-    background-color: #000;
+    background-color: #230f08;
     overflow: hidden;
     text-align: center;
 }
@@ -14,11 +14,11 @@
     margin-left: 10vw;
     margin-right: 10vw;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 24px;
 }
 
 /* hover kleur verandering */
 .topnav a:hover {
     background-color: #232323;
-    color: black;
+    color: #c1afaf;
 }
