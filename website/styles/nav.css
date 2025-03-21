@@ -1,3 +1,42 @@
+/* Mobiel responsive aanpassingen */
+@media (max-width: 600px) {
+    .topnav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .topnav a {
+        font-size: 20px;
+        margin: 8px 0; /* minder horizontale marge, meer verticale */
+        padding: 12px 16px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .logo-container {
+        padding: 10px;
+    }
+
+    .logo-container img {
+        max-width: 70px;
+
+    }
+    form
+    {
+
+    }
+}
+
+
+
+body
+{
+    margin: 0;
+}
+
+
 /* Achtergrond kleur navigatiebalk */
 .topnav {
     background-color: #230f08;
@@ -23,16 +62,15 @@
     color: #c1afaf;
 }
 
-
-.logo{
-    height: 400px;
+.logo-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #3b3b3b; /* zoals in je schets */
+    padding: 20px;
 }
 
-}
-
-.krupp{
-    background-color: #3c3c3c;
+.logo-container img {
+    max-width:100px; /* zorgt ervoor dat de afbeelding niet te groot wordt */
+    height: auto;
 }

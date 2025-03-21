@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/nav.css">
+
     <link rel="stylesheet" href="styles/formulier.css">
     <title>FORMULIER</title>
 </head>
@@ -18,14 +18,17 @@ include "include/navformulier.php";
 </header>
 
     <main>
-
-
+        <div id="intro">
+        <H1>Welkom bij de formulier pagina.</H1>
+        <h2>Op deze pagina kan je een vragenlijst invullen, waarbij je een soort-tank te zien krijgt afhankelijk van je wensen</h2>
+        </div>
+        <h1 id="hoofdregel">Formulierpagina</h1>
         <div class="container">
-            <h1>Formulierpagina</h1>
+
 
             <form action="verwerk_formulier.php" method="POST">
 
-                <div class="vraag">
+                <div class="vraag1">
                     <h2>1) Wat is je naam?</h2>
                     <input type="text" name="naam" required>
                 </div>
@@ -89,8 +92,10 @@ include "include/navformulier.php";
             </form>
         </div>
     </main>
-
+       <br>
         <footer>
+
+            <p>	&copy;Gemaakt door Amine el Arras</p>
 
         </footer>
 </body>
