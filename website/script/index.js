@@ -82,7 +82,7 @@
 //
 //         <div class="mySlides fade">
 //             <div class="numbertext">2 / 3</div>
-//             <img src="images/img.png">
+//             <img src="images/panzerkampfwagenIV.png">
 //                 <div class="text">Krupp Protze (Lichte Verkenningsauto):
 //
 //                     Dit was een licht militair voertuig dat veel werd gebruikt tijdens de Tweede Wereldoorlog voor verkenning en transport.</div>

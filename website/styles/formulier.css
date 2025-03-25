@@ -1,7 +1,7 @@
 /* Algemene reset */
 body {
     margin: 0;
-    background-color: grey;
+    background-color: #3b2626;
 }
 
 /* Navigatiebalk */
@@ -50,11 +50,13 @@ body {
     margin: auto;
     display: flex;
     justify-content: center;
-    background-color: brown;
+    background-color: #4B5320;
     width: max-content;
     height: max-content;
     padding: 20px;
     flex-direction: column;
+    border-radius: 5%;
+
 }
 
 .vraag1 {
