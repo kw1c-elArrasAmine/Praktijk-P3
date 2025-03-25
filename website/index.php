@@ -11,7 +11,8 @@
 </head>
 <body>
 <?php
-    include "include/navformulier.php";
+include "include/navformulier.php";
 ?>
+
 </body>
 </html>

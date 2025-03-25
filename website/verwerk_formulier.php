@@ -54,7 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
 <div class="container">
-    <h1>Resultaat voor <?php echo htmlspecialchars($naam); ?></h1>
+    <h1>Resultaat voor <?php echo ($naam); ?></h1>
     <p><?php echo $resultaat; ?></p>
     <a href="formulier.php">Opnieuw invullen</a>
 </div>
