@@ -2,7 +2,7 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="f7313c6c-cc38-466c-b117-d5008b92ff54" name="REA_T3T4" url="http://localhost/REA_T3T4">
+      <webServer id="f7313c6c-cc38-466c-b117-d5008b92ff54" name="REA_T3T4" url="http://localhost">
         <fileTransfer mountedRoot="C:\xampp-windows-x64\htdocs\REA_T3T4" accessType="MOUNT" port="0" />
       </webServer>
     </option>

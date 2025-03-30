@@ -14,10 +14,9 @@
         <ul>
             <li><a href="../index.php">Homepagina</a></li>
             <li><a href="../formulier.php">Formulier</a></li>
-
-
         </ul>
     </nav>
-    <head>
+    </head>
+
 </body>
 </html>
