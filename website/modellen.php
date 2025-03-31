@@ -24,4 +24,12 @@ include "include/navformulier.php";
 </div>
     <div class="line"></div>
 
+
+<div>
+    <h2>PANZER II</h2>
+    <img class="alfred" src="images/pzII.png" alt="Alfred Krupp">
+    <p>Panzerkampfwagen ausf II(afgekort panzer II) is een licht tank dat een armament heeft van 7.9mm machine wapen en 20mm auto kanon. Het tank is redelijk snel vergeleken met andere tank modellen met het snelheid van 44km/u maar een beter mobiliteit eist minder gewicht waardoor het tank model alleen 20mm frontaal pantser en 14mm zijden en achterkant pantser heeft. Het tank is meer geschikt voor scouting sinds vanwege zijn snelheid andere tanken kan opsporen en snel vluchten voordat het betrapt wordt. Het tank model is erg goedkoop vergeleken met andere modellen in de lijst, </p></div>
+
+
+
 </div>
