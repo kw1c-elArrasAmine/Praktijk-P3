@@ -44,7 +44,7 @@
 
     <div><P>Om meer te weten over verschillende tank modellen ontworpen door Krupp, check het 'MODELLEN' pagina</P></div>
 
-    <button onclick="window.location.href='../modellen.php';">MODELLEN</button>
+    <button onclick=".href='../../modellen.php';">MODELLEN</button>
 
 </div>
 
