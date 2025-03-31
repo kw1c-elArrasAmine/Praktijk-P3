@@ -1,4 +1,7 @@
 <?php
+
+$datum = date("Y-m-d");
+$tijd = date("h:i:sa");
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $score = 0;
 
@@ -40,13 +43,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Resultaat bepalen
     if ($score >= 250) {
-        $resultaat = " Welkom $naam  <br> Jouw voertuig is een Panzerkampfwagen VI Tiger II (Königstiger) – een zwaar bepantserde tank met krachtige vuurkracht en langeafstandsvermogen. <img src='../tanks/PanzerkampfwagenVITigerII(Königstiger).png' class='imgtank'> ";
+        $resultaat = " Welkom $naam je hebt de formulier ingevuld om $tijd op $datum  <br> Jouw voertuig is een Panzerkampfwagen VI Tiger II (Königstiger) – een zwaar bepantserde tank met krachtige vuurkracht en langeafstandsvermogen. <img src='../tanks/PanzerkampfwagenVITigerII(Königstiger).png' class='imgtank'> ";
     } elseif ($score >= 180) {
-        $resultaat = " Welkom $naam  <br>Jouw voertuig is een Panzerkampfwagen VI Tiger I – een iconische tank met dikke bepantsering, sterk kanon en uitstekende gevechtsmogelijkheden. <img src='../tanks/PanzerkampfwagenVITigerI.png' class='imgtank' >";
+        $resultaat = " Welkom $naam je hebt de formulier ingevuld om $tijd op $datum   <br>Jouw voertuig is een Panzerkampfwagen VI Tiger I – een iconische tank met dikke bepantsering, sterk kanon en uitstekende gevechtsmogelijkheden. <img src='../tanks/PanzerkampfwagenVITigerI.png' class='imgtank' >";
     } elseif ($score >= 120) {
-        $resultaat = " Welkom $naam  <br> Jouw voertuig is een Panzerkampfwagen V Panther – een gebalanceerde tank met goede mobiliteit, penetratie en pantser.<img src='../tanks/PanzerkampfwagenVPanther.png' class='imgtank'>";
+        $resultaat = " Welkom $naam je hebt de formulier ingevuld om $tijd op $datum   <br> Jouw voertuig is een Panzerkampfwagen V Panther – een gebalanceerde tank met goede mobiliteit, penetratie en pantser.<img src='../tanks/PanzerkampfwagenVPanther.png' class='imgtank'>";
     } else {
-        $resultaat = " Welkom $naam <br> Jouw voertuig is een Panzerkampfwagen IV – veelzijdig, kostenefficiënt en geschikt voor verschillende scenario's.<br><img src='../tanks/panzerkampfwagenIV.png' class='imgtank'>";
+        $resultaat = " Welkom $naam je hebt de formulier ingevuld om $tijd op $datum  <br> Jouw voertuig is een Panzerkampfwagen IV – veelzijdig, kostenefficiënt en geschikt voor verschillende scenario's.<br><img src='../tanks/panzerkampfwagenIV.png' class='imgtank'>";
+    }
+    while($score >= 250)
+    {
+        $resultaat = " Welkom $naam je hebt de formulier ingevuld om $tijd op $datum  <br> Jouw voertuig is een Panzerkampfwagen VI Tiger II (Königstiger) – een zwaar bepantserde tank met krachtige vuurkracht en langeafstandsvermogen. <img src='../tanks/PanzerkampfwagenVITigerII(Königstiger).png' class='imgtank'> ";
     }
 }
 ?>

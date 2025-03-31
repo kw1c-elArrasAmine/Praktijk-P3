@@ -5,6 +5,9 @@
       <webServer id="f7313c6c-cc38-466c-b117-d5008b92ff54" name="REA_T3T4" url="http://localhost">
         <fileTransfer mountedRoot="C:\xampp-windows-x64\htdocs\REA_T3T4" accessType="MOUNT" port="0" />
       </webServer>
+      <webServer id="8e746cd8-2292-44f6-8ef8-6c352b48523a" name="PraktijkP3" url="http://localhost/Praktijk-P3">
+        <fileTransfer mountedRoot="C:\xampp\htdocs\Praktijk-P3" accessType="MOUNT" port="0" />
+      </webServer>
     </option>
   </component>
 </project>
