@@ -24,8 +24,4 @@ include "include/navformulier.php";
 </div>
     <div class="line"></div>
 
-
-
-
-
 </div>
