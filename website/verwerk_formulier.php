@@ -1,25 +1,24 @@
 <?php
-
 $datum = date("Y-m-d");
 $tijd = date("h:i:sa");
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $score = 0;
 
     // Gegevens ophalen
-    $snelheid = (int) $_POST['snelheid'];
-    $penetratie = (int) $_POST['penetratie'];
-    $kaliber = (int) $_POST['kaliber'];
-    $combat_bereik = (int) $_POST['combat_bereik'];
-    $pantser_frontaal = (int) $_POST['pantser_frontaal'];
-    $pantser_zijkant = (int) $_POST['pantser_zijkant'];
-    $pantser_achterkant = (int) $_POST['pantser_achterkant'];
+    $snelheid = $_POST['snelheid'];
+    $penetratie = $_POST['penetratie'];
+    $kaliber = $_POST['kaliber'];
+    $combat_bereik = $_POST['combat_bereik'];
+    $pantser_frontaal = $_POST['pantser_frontaal'];
+    $pantser_zijkant = $_POST['pantser_zijkant'];
+    $pantser_achterkant = $_POST['pantser_achterkant'];
     $specialisatie = $_POST['specialisatie'];
-    $motor_hp = (int) $_POST['motor_hp'];
+    $motor_hp = $_POST['motor_hp'];
     $brandstof = $_POST['brandstof'];
     $kostenefficient = $_POST['kostenefficient'];
     $naam = $_POST['naam'];
 
-    // Shells tellen als er zijn
     if (isset($_POST['shells'])) {
         $shells = $_POST['shells'];
     } else {
@@ -29,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Simpele scorelogica
     $score += $snelheid;
-    $score += $penetratie / 10; // bijv. 200 mm = 20 punten
+    $score += $penetratie / 10;
     $score += $kaliber;
     $score += $combat_bereik / 10;
     $score += $pantser_frontaal / 5;
@@ -43,18 +42,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Resultaat bepalen
     if ($score >= 250) {
-        $resultaat = " Welkom $naam je hebt de formulier ingevuld om $tijd op $datum  <br> Jouw voertuig is een Panzerkampfwagen VI Tiger II (Königstiger) – een zwaar bepantserde tank met krachtige vuurkracht en langeafstandsvermogen. <img src='../tanks/PanzerkampfwagenVITigerII(Königstiger).png' class='imgtank'> ";
+        $resultaat = "Welkom $naam je hebt de formulier ingevuld om $tijd op $datum<br><br><img src='../tanks/PanzerkampfwagenVITigerII(Königstiger).png' class='imgtank'><br> Jouw voertuig is een Panzerkampfwagen VI Tiger II (Königstiger) – een zwaar bepantserde tank met krachtige vuurkracht en langeafstandsvermogen.";
     } elseif ($score >= 180) {
-        $resultaat = " Welkom $naam je hebt de formulier ingevuld om $tijd op $datum   <br>Jouw voertuig is een Panzerkampfwagen VI Tiger I – een iconische tank met dikke bepantsering, sterk kanon en uitstekende gevechtsmogelijkheden. <img src='../tanks/PanzerkampfwagenVITigerI.png' class='imgtank' >";
+        $resultaat = "Welkom $naam je hebt de formulier ingevuld om $tijd op $datum<br><br><img src='../tanks/PanzerkampfwagenVITigerI.png' class='imgtank'><br>Jouw voertuig is een Panzerkampfwagen VI Tiger I – een iconische tank met dikke bepantsering, sterk kanon en uitstekende gevechtsmogelijkheden.";
     } elseif ($score >= 120) {
-        $resultaat = " Welkom $naam je hebt de formulier ingevuld om $tijd op $datum   <br> Jouw voertuig is een Panzerkampfwagen V Panther – een gebalanceerde tank met goede mobiliteit, penetratie en pantser.<img src='../tanks/PanzerkampfwagenVPanther.png' class='imgtank'>";
+        $resultaat = "Welkom $naam je hebt de formulier ingevuld om $tijd op $datum<br><br><img src='../tanks/PanzerkampfwagenVPanther.png' class='imgtank'><br>Jouw voertuig is een Panzerkampfwagen V Panther – een gebalanceerde tank met goede mobiliteit, penetratie en pantser.";
     } else {
-        $resultaat = " Welkom $naam je hebt de formulier ingevuld om $tijd op $datum  <br> Jouw voertuig is een Panzerkampfwagen IV – veelzijdig, kostenefficiënt en geschikt voor verschillende scenario's.<br><img src='../tanks/panzerkampfwagenIV.png' class='imgtank'>";
+        $resultaat = "Welkom $naam je hebt de formulier ingevuld om $tijd op $datum<br><br><img src='../tanks/panzerkampfwagenIV.png' class='imgtank'><br>Jouw voertuig is een Panzerkampfwagen IV – veelzijdig, kostenefficiënt en geschikt voor verschillende scenario's.";
     }
-    while($score >= 250)
-    {
-        $resultaat = " Welkom $naam je hebt de formulier ingevuld om $tijd op $datum  <br> Jouw voertuig is een Panzerkampfwagen VI Tiger II (Königstiger) – een zwaar bepantserde tank met krachtige vuurkracht en langeafstandsvermogen. <img src='../tanks/PanzerkampfwagenVITigerII(Königstiger).png' class='imgtank'> ";
-    }
+
+    // Cookie instellen voor 1 uur
+    setcookie("resultaat", $resultaat, time() + 3600);
+} if (isset($_COOKIE['resultaat'])) {
+    // Als geen formulier is verzonden, maar cookie bestaat
+    $resultaat = $_COOKIE['resultaat'];
+} else {
+    // Geen formulier én geen cookie
+    $resultaat = "Er is nog geen formulier ingevuld.";
 }
 ?>
 
@@ -62,33 +66,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/verwerk.css">
     <title>Resultaat</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f1f1f1;
-            padding: 20px;
-        }
-        .container {
-            background: white;
-            border-radius: 10px;
-            padding: 20px;
-            max-width: 700px;
-            margin: auto;
-            box-shadow: 0 0 10px rgba(0,0,0,0.2);
-        }
-        a {
-            display: inline-block;
-            margin-top: 20px;
-            color: #007bff;
-            text-decoration: none;
-        }
 
-        .imgtank
-        {
-            width: 100px;
-        }
-    </style>
 </head>
 <body>
 <div class="container">
