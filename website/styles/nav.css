@@ -1,9 +1,18 @@
+/*kleur font en achtergrond*/
+Body{
+    background-color: #321c1c;
+    color: aliceblue;
+}
+
 /* Achtergrond kleur navigatiebalk */
 .topnav {
     background-color: #230f08;
     overflow: hidden;
     text-align: center;
 }
+
+
+
 
 /* het algemene uiterlijk van navigatiebalk */
 .topnav a {
@@ -17,6 +26,20 @@
     font-size: 24px;
 }
 
+
+/* Achtergrond kleur navigatiebalk */
+.topnav {
+    background-color: #230f08;
+}
+
+
+
+
+/*grootte plaatjes*/
+.alfred{
+    height: 20vw;
+}
+
 /* hover kleur verandering */
 .topnav a:hover {
     background-color: #232323;
@@ -24,15 +47,67 @@
 }
 
 
-.logo{
+/*grootte logo, positie logo*/
+.logo {
     height: 400px;
-    display: flex;
     justify-content: center;
     align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*achtergrond kleur logo*/
+.backgroundlogo{
+    background-color: #353535;
+}
+
+/*spaties tussen tekst en pagina*/
+.margin{
+    text-align: center ;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+/*grootte font header*/
+#head{
+    font-size: 25px;
 }
 
 
+/*lijn decoratie*/
+.line{
+    background-color: aliceblue;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 2px;
+}
 
-.krupp{
-    background-color: #3c3c3c;
+/*knop grootte, kleur en font*/
+button{
+    color: aliceblue;
+    background-color: #232323;
+    width: 200px;
+    height: 70px;
+    font-size: 30px;
+    font-family:"Times New Roman" ;
+    border: none;
+}
+
+/*muis hover op knop kleur*/
+button:hover {
+    background-color: #0e0e0e;
+}
+
+/*footer kleur, font grootte, grootte en positie tekst*/
+.footer{
+    background-color: black;
+    color: aliceblue;
+    font-size: 20px;
+    text-align: center;
+    padding: 3vw;
 }
