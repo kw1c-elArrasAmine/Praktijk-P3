@@ -8,12 +8,16 @@
     <title>HOME</title>
 </head>
 <body>
+
+<!--navigatie-->
 <?php
     include "include/navformulier.php";
 ?>
 
-
+<!--spaties tussen pagina en tekst-->
 <div class="margin" id="head">
+
+<!--introductie gedeelte-->
     <h1>WELKOM</h1>
 
     <P>Welkom in Krupp. Hier bevindt u diverse soorten tank ontwerpen van de tweede wereldoorlog ontworpen door Krupp. Wij zijn achter iconische tank ontwerpen zoals Panzerkampfwagen VI TIGER ausf H, Panzerkampfwagen IV, Panzerkampfwagen III en meer.</P>
@@ -26,6 +30,9 @@
 <div class="line"> </div>
 
 <div class="margin" id="head">
+
+<!--geschiedenis gedeelte-->
+
     <h2>GESCHIEDENIS</h2>
 
     <div><P>Krupp was opgericht in 1811 door Friedrich Krupp in Essen, Duitsland. Het bedrijf begon als een staalgieterij. Het bedrijf kreeg een sterke stijging in waarde toen Alfred Krupp, zoon van Friedrich innovaties ontwierp zoals het Krupp kanon. Het eerste kanon gemaakt van staal. Zulke innovaties gaf het Krupp bedrijf een belangrijke plek in het militaire industrie waardoor het belangrijke rol speelde in oorlogen zoals Frans-Pruisisch oorlog en het EersteWereldoorlog.</P></div>
@@ -39,13 +46,20 @@
 <div class="line"> </div>
 
 <div class="margin" id="head">
+
+<!--modellen pagina -->
     <h2>MODELLEN</h2>
 
-    <div><P>Om meer te weten over verschillende tank modellen ontworpen door Krupp, check het 'MODELLEN' pagina</P></div>
+    <div><P>Om meer te weten over verschillende tank modellen ontworpen door Krupp, check het 'MODELLEN' pagina.</P></div>
 
     <button onclick="location.href='./modellen.php'">MODELLEN</button>
 
 </div>
 
 </body>
+
+<!--footer-->
+<?php
+include "footer.php";
+?>
 </html>

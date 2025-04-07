@@ -10,21 +10,25 @@
         <title>HOME</title>
     </head>
     <body>
+
+<!--navigatie-->
 <?php
 include "include/navformulier.php";
 ?>
 
 <div class="margin" id="head">
+
+<!--titel-->
 <h2>MODELLEN</h2>
 
     <div class="line"> </div>
-
+<!--descriptie titel-->
 <div>
     Hier bevindt u het list van allerlei soorten modellen ontworpen door Krupp. Het modellen verschillen qua gewicht, prijzen, wapens calibre en meer. Dat betekent dat elk tank gespecialiseerd is in andere gevallen waardoor uw vraag het resultaat kunt verschillen.
 </div>
     <div class="line"></div>
 
-
+<!--gedeeltes over tank descripties-->
 <div>
     <h2>PANZER II</h2>
     <img class="alfred" src="images/pzII.png" alt="Alfred Krupp">
@@ -40,7 +44,7 @@ include "include/navformulier.php";
 
 <div class="line"></div>
 <div class="margin" id="head">
-    <h2>TIGER</h2>
+    <h2>PANTHER</h2>
     <img class="alfred" src="images/pzV.png" alt="Alfred Krupp">
     <p>Panzerkampfwagen ausf V(bekend als "panther") is een ook een medium tank, eerst geproduceerd in 1943, het panther is het reactie van het Duitsers tegen de Russische T-34. Het pantser van panther is redelijk dik met 80 mm frontaal, 40 mm bij het zijden en 40 mm achterkant dik, maar omdat het frontale pantser hellend is, is het effectieve frontale protectie 139 mm. Het panther heeft een caliber van 75 mm, maar door het feit dat de tank een nieuwere model is met het betere KwK 42 L/70 kanon, heeft de tank een uitstekende penetratie van 138 mm dichtbij(100m) en 100mm verderweg(1500m). Dit uitstekende kanon kan zelfs een 'IS-1' tank frontaal penetreren. de snelheid van de tank is 55 km/u, maar latere modellen zijn slomer met 42 km/u als maximale snelheid. Het panther is niet een goedkope tank, met de prijs van 143,912 Reichmarks(575,648 euro's) volledig uitgerust. Panther is een erg iconische tank van het TweedeWereldOorlog en het zal bekend zijn in de geschiedenis als een van de beste Duitse tanks.
     </p>
@@ -55,3 +59,9 @@ include "include/navformulier.php";
 </div>
 </div>
 </body>
+
+<!--footer-->
+<?php
+include "footer.php";
+?>
+</html>
