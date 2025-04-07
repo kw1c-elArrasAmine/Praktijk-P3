@@ -8,6 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/formulier.css">
+    <link rel="stylesheet" href="styles/nav.css">
     <title>FORMULIER</title>
 </head>
 <body>
@@ -109,7 +110,7 @@
                 <label><input type="radio" name="kostenefficient" value="nee"> Nee</label>
             </div>
 
-            <button type="submit">Verstuur</button>
+            <button class="formulierknop" type="submit">Verstuur</button>
 
         </form>
 
@@ -117,9 +118,6 @@
 </main>
 
 <br>
-<footer>
-    <p>&copy;Gemaakt door Amine el Arras</p>
-</footer>
 
 </body>
 

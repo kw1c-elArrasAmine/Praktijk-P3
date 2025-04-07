@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="REA_T3T4" remoteFilesAllowedToDisappearOnAutoupload="false">
+  <component name="PublishConfigData" serverName="Praktijk-p3" remoteFilesAllowedToDisappearOnAutoupload="false">
     <serverData>
+      <paths name="Praktijk-p3">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="REA_T3T4">
         <serverdata>
           <mappings>
