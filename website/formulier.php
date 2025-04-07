@@ -8,6 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/formulier.css">
+    <script src="script/index.js" defer></script>
     <title>FORMULIER</title>
 </head>
 <body>
@@ -108,6 +109,20 @@
                 <label><input type="radio" name="kostenefficient" value="ja" required> Ja</label><br>
                 <label><input type="radio" name="kostenefficient" value="nee"> Nee</label>
             </div>
+
+            <div class="vraag">
+                <h2>14) Wat is het gewenste gewicht van de tank? (in ton)</h2>
+                <input type="number" name="gewicht" min="10" max="80" required>
+                <p>Minimaal gewicht: 10 ton, Maximaal gewicht: 80 ton</p>
+            </div>
+
+            <div class="vraag">
+                <h2>15) Moet de tank amfibisch zijn (kan door water rijden)?</h2>
+                <label><input type="radio" name="amfibisch" value="ja" required> Ja</label><br>
+                <label><input type="radio" name="amfibisch" value="nee"> Nee</label>
+            </div>
+
+            <button type="button" onclick="autoVulFormulier()">Vragen Automatisch Invullen</button>
 
             <button type="submit">Verstuur</button>
 
